@@ -1,0 +1,102 @@
+#form_add_license {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.rx_input {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    padding: 8px;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 300px;
+}
+#rx_create_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 8px;
+    margin: 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+    font-weight: 600;
+    background-color: #63edf7;
+    cursor: pointer;
+}
+#rx_select_days {
+    display: flex;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #eeeeee;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #fff;
+    width: 200px;
+    border-radius: 5px;
+}
+#rx_select_days ul {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #020202;
+    width: 200px;
+    padding: 4px;
+}
+#rx_select_days ul li:hover {
+    background-color: #63edf7;
+    color: #020202;
+}
+#rx_details_select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.rx_title {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 2px;
+}
+.angle_icon {
+    font-size: 20px;
+    margin: 0 4px;
+}
+#rx_notify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    gap: 8px;
+    width: 300px;
+    margin-bottom: 16px;
+    padding: 4px;
+}
+
+.ok {
+    background-color: rgba(62, 250, 38, 0.3);
+    border: 2px solid #1a751a;
+}
+.error {
+    background-color: rgba(250, 52, 38, 0.3);
+    border: 2px solid #b84123;
+}
+.rx_response_icon {
+    font-size: 24px;
+    flex: 20%;
+}

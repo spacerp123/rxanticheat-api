@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#__next {
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+p, span {
+    color: #ffffff;
+}
+summary::-webkit-details-marker {
+	display: none;
+}

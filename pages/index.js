@@ -1,19 +1,13 @@
-import useSWR from 'swr'
-import Person from '../components/Person'
-
-const fetcher = (url) => fetch(url).then((res) => res.json())
+import Head from 'next/head';
 
 export default function Index() {
-  const { data, error } = useSWR('/api/people', fetcher)
-
-  if (error) return <div>Failed to load</div>
-  if (!data) return <div>Loading...</div>
-
   return (
-    <ul>
-      {data.map((p, i) => (
-        <Person key={i} person={p} />
-      ))}
-    </ul>
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", backgroundColor: "#020202"}}>
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet" />
+      </Head>
+      <p style={{ textAlign: "center", fontFamily: "Inter, sans-serif", fontSize: "42px", fontWeight: "bold"}}>RxAnticheat - API</p>
+    </div>
   )
 }
